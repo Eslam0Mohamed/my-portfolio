@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eslam's portfolio </title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-white">
+<header class="py-6 bg-gray-200/50">
+    <div class="container w-10/12 mx-auto flex items-center justify-between px-4 ">
+        <h1 class="text-3xl font-bold text-black ">Eslam Mohamed</h1>
+        <ul class="flex gap-4 *:font-semibold *:text-lg *:text-gray-700/70 *:hover:border-b *:hover:border-amber-400">
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact Me</a>
+            </li>
+        </ul>
+        <div class="mode flex gap-5 ">
+            <button>dark Mode</button>
+  <button class="font-semibold text-violet-600 hover:bg-violet-800 transition-all duration-500 hover:text-white hover:scale-105 border border-gray-300 py-3 px-5 rounded-xl">
+    <a href="mailto:eslama202002@gmail.com">Contact Me</a>
+</button>
+        </div>
+    </div>
+</header>
+<section class="about py-12" id="about">
+    <div class="container w-10/12 mx-auto lg:flex justify-between items-center px-3">
+        <div class="home-contant w-2/3 space-y-8">
+            <h1 class="text-7xl capitalize font-bold ">eslam mohamed</h1>
+            <h1 class="text-5xl capitalize font-semibold text-violet-600 text-shadow-2xs">frontend engineer</h1>
+            <p class="text-2xl text-gray-700/70">I build sleek, fast, and accessible web experiences. 
+                Focused on DX and pixel-perfect UI with React, TypeScript, and modern tooling.</p>
+            <div class="btns flex gap-5">
+                <button class="font-semibold hover:bg-violet-800 text-white transition-all duration-500 hover:scale-105 bg-violet-600 py-3 px-5 rounded-xl">
+                    <a href="projects">View Projects</a>
+                </button>
+                    <button class="font-semibold text-violet-600 hover:bg-violet-800 transition-all duration-500 hover:text-white hover:scale-105 border border-gray-300 py-3 px-5 rounded-xl">
+                    <a href="mailto:eslama202002@gmail.com">Download My CV</a>
+                </button>
+            </div>
+        </div>
+        <div class="home-image">
+            <img src="./images/ae1.jpg" alt="image portfolio for me" class="w-96 rounded-2xl">
+        </div>
+    </div>
+</section>
+<section class="projects py-12 bg-gray-200">
+    <div class="container w-11/12 mx-auto " >
+    <h2 class="text-4xl font-bold mb-10">My Projects</h2>
+
+    <div class="projects-container grid grid-cols-3 gap-5">
+<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col">
+    <div class="project-image ">
+        <img src="./images/weather.png" alt="image for weather project" class="w-full mb-3 object-cover h-60 ">
+    </div>
+    <div class="project-content flex flex-col justify-between flex-1 space-y-2  py-3 px-2 ">
+<h3 class="text-3xl font-semibold text-gray-600">Weather App</h3>
+<p class="text-gray-700/70 font-medium ">A responsive web application that displays a 7-day weather forecast for any city. It also shows rain conditions expected in the next 4 hours</p>
+<div class="stack flex gap-2 flex-wrap">
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Html</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Css</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Javascript</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Bootstrap</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Api</span>
+</div>
+<div class="links flex items-center gap-5">
+    <a href="https://github.com/Eslam0Mohamed/weather-app.git" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-white border border-gray-400 text-violet-600 py-2 px-3 font-medium cursor-pointer rounded-2xl ">GitHub Repo</a>
+    <a href="https://eslam0mohamed.github.io/weather-app/" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-violet-600 text-white py-2 px-3 font-medium cursor-pointer rounded-2xl ">Live Demo</a>
+</div>
+    </div>
+</div>
+<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
+    <div class="project-image ">
+        <img src="./images/to do list.png" alt="image for to do list project" class="w-full mb-3 object-cover h-60 ">
+    </div>
+    <div class="project-content flex flex-col justify-between flex-1 space-y-2  py-3 px-2 flex-grow">
+<h3 class="text-3xl font-semibold text-gray-600">TO DO List</h3>
+<p class="text-gray-700/70 font-medium ">A user-friendly task management app that allows users to create,
+     organize, and update tasks using LocalStorage. Tasks can be sorted by status (Next Up, In Progress, Done), </p>
+<div class="stack flex gap-2 flex-wrap">
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Html</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Css</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Javascript</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Bootstrap</span>
+</div>
+<div class="links flex items-center gap-5">
+    <a href="https://github.com/Eslam0Mohamed/toDoListApp.git" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-white border border-gray-400 text-violet-600 py-2 px-3 font-medium cursor-pointer rounded-2xl ">GitHub Repo</a>
+    <a href="https://eslam0mohamed.github.io/toDoListApp/" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-violet-600 text-white py-2 px-3 font-medium cursor-pointer rounded-2xl ">Live Demo</a>
+</div>
+    </div>
+</div>
+<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
+    <div class="project-image ">
+        <img src="./images/shorten url.jpg" alt="image for Shorten Url project" class="w-full mb-3 object-cover h-60">
+    </div>
+    <div class="project-content flex flex-col justify-between flex-1 space-y-2 py-3 px-2 flex-grow">
+<h3 class="text-3xl font-semibold text-gray-600">Shorten Url</h3>
+<p class="text-gray-700/70 font-medium ">A simple URL Shortener App built with HTML, CSS, and JavaScript, integrated with the TinyURL API.
+Users can shorten long URLs, copy them with one click, and store them locally for later use. </p>
+<div class="stack flex gap-2 flex-wrap">
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Html</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Css</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Javascript</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">tinyUrl Api</span>
+</div>
+<div class="links flex items-center gap-5">
+    <a href="https://github.com/Eslam0Mohamed/shorten-url.git" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-white border border-gray-400 text-violet-600 py-2 px-3 font-medium cursor-pointer rounded-2xl ">GitHub Repo</a>
+    <a href="https://eslam0mohamed.github.io/shorten-url/" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-violet-600 text-white py-2 px-3 font-medium cursor-pointer rounded-2xl ">Live Demo</a>
+</div>
+    </div>
+</div>
+<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
+    <div class="project-image ">
+        <img src="./images/mealify.png" alt="image for mealify project" class="w-full mb-3 object-cover h-60 ">
+    </div>
+    <div class="project-content flex flex-col justify-between flex-1 space-y-2 py-3 px-2 flex-grow">
+<h3 class="text-3xl font-semibold text-gray-600">Mealify</h3>
+<p class="text-gray-700/70 font-medium ">Mealify is a simple front-end web project that showcases meals and recipes with a clean and responsive design.
+</p>
+<div class="stack flex gap-2 flex-wrap">
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Html</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Css</span>
+</div>
+<div class="links flex items-center gap-5">
+    <a href="https://github.com/Eslam0Mohamed/Mealify.git" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-white border border-gray-400 text-violet-600 py-2 px-3 font-medium cursor-pointer rounded-2xl ">GitHub Repo</a>
+    <a href="https://eslam0mohamed.github.io/Mealify/" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-violet-600 text-white py-2 px-3 font-medium cursor-pointer rounded-2xl ">Live Demo</a>
+</div>
+    </div>
+</div>
+<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
+    <div class="project-image ">
+        <img src="./images/devfolio.png" alt="image for devfolio project" class="w-full mb-3 object-cover h-60 ">
+    </div>
+    <div class="project-content flex flex-col justify-between flex-1 space-y-2 py-3 px-2 flex-grow">
+<h3 class="text-3xl font-semibold text-gray-600">Devfolio</h3>
+<p class="text-gray-700/70 font-medium ">Devfolio is a personal portfolio project that showcases my work, skills, and contact information. It's built using 
+    HTML, CSS, and Bootstrap to present a clean, responsive and modern design.</p>
+<div class="stack flex gap-2 flex-wrap">
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Html</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Css</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Bootstrap</span>
+</div>
+<div class="links flex items-center gap-5">
+    <a href="https://github.com/Eslam0Mohamed/Devfolio.git" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-white border border-gray-400 text-violet-600 py-2 px-3 font-medium cursor-pointer rounded-2xl ">GitHub Repo</a>
+    <a href="https://eslam0mohamed.github.io/Devfolio/" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-violet-600 text-white py-2 px-3 font-medium cursor-pointer rounded-2xl ">Live Demo</a>
+</div>
+    </div>
+</div>
+<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
+    <div class="project-image ">
+        <img src="./images/login.png" alt="image for login project" class="w-full mb-3 object-cover h-60 ">
+    </div>
+    <div class="project-content flex flex-col justify-between flex-1 space-y-2 py-3 px-2 flex-grow ">
+<h3 class="text-3xl font-semibold text-gray-600">Smart Login System</h3>
+<p class="text-gray-700/70 font-medium ">SmartLoginSystem is a web project that implements a secure and user-friendly login system. The goal is to create an authentication flow with modern UI and best practices.
+</p>
+<div class="stack flex gap-2 flex-wrap">
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Html</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Css</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Javascript</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Bootstrap</span>
+</div>
+<div class="links flex items-center gap-5">
+    <a href="https://github.com/Eslam0Mohamed/smartLoginSystem.git" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-white border border-gray-400 text-violet-600 py-2 px-3 font-medium cursor-pointer rounded-2xl ">GitHub Repo</a>
+    <a href="https://eslam0mohamed.github.io/smartLoginSystem/" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-violet-600 text-white py-2 px-3 font-medium cursor-pointer rounded-2xl ">Live Demo</a>
+</div>
+    </div>
+</div>
+<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
+    <div class="project-image ">
+        <img src="./images/freshcart.png" alt="image for freshcart project" class="w-full mb-3 object-cover h-60 ">
+    </div>
+    <div class="project-content flex flex-col justify-between flex-1 space-y-2 py-3 px-2 flex-grow">
+<h3 class="text-3xl font-semibold text-gray-600">FreshCart Ecommerce</h3>
+<p class="text-gray-700/70 font-medium ">FreshCart is a modern React-based E-Commerce application that provides a complete shopping experience: user authentication, browsing products, managing cart & wishlist, and completing checkout.</p>
+<div class="stack flex gap-2 flex-wrap ">
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">React</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Tailwind CSS</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Javascript</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">React Router</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">context Api</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">TanStack Query</span>
+</div>
+<div class="links flex items-center gap-5">
+    <a href="https://github.com/Eslam0Mohamed/freshCart-Ecommerce.git" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-white border border-gray-400 text-violet-600 py-2 px-3 font-medium cursor-pointer rounded-2xl ">GitHub Repo</a>
+    <a href="https://fresh-cart-ecommerce-delta.vercel.app/" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-violet-600 text-white py-2 px-3 font-medium cursor-pointer rounded-2xl ">Live Demo</a>
+</div>
+    </div>
+</div>
+<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
+    <div class="project-image ">
+        <img src="./images/yummy.png" alt="image for yummy project" class="w-full mb-3 object-cover h-60 ">
+    </div>
+    <div class="project-content flex flex-col justify-between flex-1 space-y-2 py-3 px-2 flex-grow">
+<h3 class="text-3xl font-semibold text-gray-600">Yummy</h3>
+<p class="text-gray-700/70 font-medium ">Yummy is a dynamic front-end web application that allows users to explore meals from an external API.</p>
+<div class="stack flex gap-2 flex-wrap">
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Html</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Css</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Javascript</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Bootstrap</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Jquery</span>
+    <span class="inline-block text-lg  border bg-gray-100 border-gray-400 text-gray-700 hover:bg-gray-300 transition-colors duration-300 py-2 px-3 rounded-md">Api</span>
+</div>
+<div class="links flex items-center gap-5">
+    <a href="https://github.com/Eslam0Mohamed/yummy.git" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-white border border-gray-400 text-violet-600 py-2 px-3 font-medium cursor-pointer rounded-2xl ">GitHub Repo</a>
+    <a href="https://eslam0mohamed.github.io/yummy/" target="_blank" class="hover:scale-105 transition-transform duration-300 bg-violet-600 text-white py-2 px-3 font-medium cursor-pointer rounded-2xl ">Live Demo</a>
+</div>
+    </div>
+</div>
+    </div>
+
+</div>
+</section>
+<section id="skills" class="skills py-12 bg-white">
+<div class="container w-10/12 mx-auto ">
+        <h2 class="text-4xl font-bold mb-10">My Skills</h2>
+    <div class="grid grid-cols-5 gap-4">
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600">
+    <h3 class="font-semibold text-2xl ">Html</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl  text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600">
+    <h3 class="font-semibold text-2xl">Css</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl  text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600">
+    <h3 class="font-semibold text-2xl">Javascript</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl  text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600">
+    <h3 class="font-semibold text-2xl ">Bootstrap</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600">
+    <h3 class="font-semibold text-2xl ">Tailwind CSS</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600">
+    <h3 class="font-semibold text-2xl ">React</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600">
+    <h3 class="font-semibold text-2xl text-gr">Redux</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600">
+    <h3 class="font-semibold text-2xl ">React Query</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600">
+    <h3 class="font-semibold text-2xl ">Context Api</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600 ">
+    <h3 class="font-semibold text-2xl">Restful Api</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600 ">
+    <h3 class="font-semibold text-2xl">Yup</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600 ">
+    <h3 class="font-semibold text-2xl">Formik</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600 ">
+    <h3 class="font-semibold text-2xl">Git</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600 ">
+    <h3 class="font-semibold text-2xl">GitHub</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600 ">
+    <h3 class="font-semibold text-2xl">Saas</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600 ">
+    <h3 class="font-semibold text-2xl">MUI</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600 ">
+    <h3 class="font-semibold text-2xl">Jwt</h3>
+</div>
+<div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600 ">
+    <h3 class="font-semibold text-2xl">Jquery</h3>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="contact py-12 bg-gray-200">
+    <div class="container w-10/12 mx-auto">
+        <h2 class="text-4xl font-bold mb-10">Contact Me</h2>
+<div class="grid grid-cols-2 items-center">
+<div class="content">
+    <h3 class="text-6xl font-semibold mb-6 ">Let’s work together</h3>
+    <p class="text-gray-700/70 text-xl max-w-[400px]">Have a project in mind or want to say hi? I’m open to freelance and full-time roles.</p>
+</div>
+<div class="form">
+ <form class="bg-white shadow-lg rounded-lg p-8 space-y-6"  
+  action="https://formspree.io/f/manpodol"
+  method="POST">
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name"
+          class="mt-1 w-full rounded-lg border-gray-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 p-3">
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email"
+          class="mt-1 w-full rounded-lg border-gray-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 p-3">
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+        <textarea id="message" rows="4" name="message" placeholder="Your Message"
+          class="mt-1 w-full rounded-lg border-gray-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 p-3"></textarea>
+      </div>
+
+      <!-- Button -->
+      <button type="submit"
+        class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
+        Send Message
+      </button>
+    </form></div>
+</div>
+    </div>
+</section>
+<footer class="py-12">
+    <div class="container mx-auto w-10/12 flex justify-between items-center">
+        <p class="text-gray-700/70 font-medium text-xl">© 2025 <span class="text-violet-600">Eslam Mohamed</span>. All rights reserved.</p>
+        <div class="media flex items-center gap-4"  >
+            <a href="mailto:eslama202002@gmail.com">
+                <img src="./images/email.png" alt="email.png" class="h-14 w-10">
+            </a>
+            <a href="https://github.com/Eslam0Mohamed">    
+                <img src="./images/github.png" alt="github.png" class="w-10">
+            </a>
+            <a href="https://www.linkedin.com/in/eslam-mohamed2002/">
+                <img src="./images/linkedin.png" alt="linkedin.png" class="w-10">
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

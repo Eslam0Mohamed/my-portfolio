@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eslam's portfolio </title>
     <link rel="stylesheet" href="src/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body class="bg-white">
 <header class="py-6 bg-gray-200/50">
-    <div class="container w-10/12 mx-auto flex items-center justify-between px-4 ">
+    <div class="container w-10/12 mx-auto flex items-center justify-between px-4">
         <h1 class="text-3xl font-bold text-black ">Eslam Mohamed</h1>
         <ul class="flex gap-4 *:font-semibold *:text-lg *:text-gray-700/70 *:hover:border-b *:hover:border-amber-400">
             <li>
@@ -32,9 +34,9 @@
         </div>
     </div>
 </header>
-<section class="about py-12" id="about">
-    <div class="container w-10/12 mx-auto lg:flex justify-between items-center px-3">
-        <div class="home-contant w-2/3 space-y-8">
+<section class="about py-12" id="about"> 
+    <div class="container w-10/12 mx-auto lg:flex justify-between items-center px-3 ">
+        <div class="home-contant w-2/3 space-y-8 from-left" >
             <h1 class="text-7xl capitalize font-bold ">eslam mohamed</h1>
             <h1 class="text-5xl capitalize font-semibold text-violet-600 text-shadow-2xs">frontend engineer</h1>
             <p class="text-2xl text-gray-700/70">I build sleek, fast, and accessible web experiences. 
@@ -44,11 +46,11 @@
                     <a href="projects">View Projects</a>
                 </button>
                     <button class="font-semibold text-violet-600 hover:bg-violet-800 transition-all duration-500 hover:text-white hover:scale-105 border border-gray-300 py-3 px-5 rounded-xl">
-                    <a href="mailto:eslama202002@gmail.com">Download My CV</a>
+                    <a href="./cv/Eslam_Mohamed_FrontEnd_Developer.pdf" download="">Download My CV</a>
                 </button>
             </div>
         </div>
-        <div class="home-image">
+        <div class="home-image from-right">
             <img src="./images/ae1.jpg" alt="image portfolio for me" class="w-96 rounded-2xl">
         </div>
     </div>
@@ -58,7 +60,7 @@
     <h2 class="text-4xl font-bold mb-10">My Projects</h2>
 
     <div class="projects-container grid grid-cols-3 gap-5">
-<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col">
+<div class="project from-left bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col">
     <div class="project-image ">
         <img src="./images/weather.png" alt="image for weather project" class="w-full mb-3 object-cover h-60 ">
     </div>
@@ -78,7 +80,7 @@
 </div>
     </div>
 </div>
-<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
+<div class="project from-left bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
     <div class="project-image ">
         <img src="./images/to do list.png" alt="image for to do list project" class="w-full mb-3 object-cover h-60 ">
     </div>
@@ -98,7 +100,7 @@
 </div>
     </div>
 </div>
-<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
+<div class="project from-left bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
     <div class="project-image ">
         <img src="./images/shorten url.jpg" alt="image for Shorten Url project" class="w-full mb-3 object-cover h-60">
     </div>
@@ -118,7 +120,7 @@ Users can shorten long URLs, copy them with one click, and store them locally fo
 </div>
     </div>
 </div>
-<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
+<div class="project from-right bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
     <div class="project-image ">
         <img src="./images/mealify.png" alt="image for mealify project" class="w-full mb-3 object-cover h-60 ">
     </div>
@@ -136,7 +138,7 @@ Users can shorten long URLs, copy them with one click, and store them locally fo
 </div>
     </div>
 </div>
-<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
+<div class="project from-right bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
     <div class="project-image ">
         <img src="./images/devfolio.png" alt="image for devfolio project" class="w-full mb-3 object-cover h-60 ">
     </div>
@@ -155,7 +157,7 @@ Users can shorten long URLs, copy them with one click, and store them locally fo
 </div>
     </div>
 </div>
-<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
+<div class="project from-right bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
     <div class="project-image ">
         <img src="./images/login.png" alt="image for login project" class="w-full mb-3 object-cover h-60 ">
     </div>
@@ -175,7 +177,7 @@ Users can shorten long URLs, copy them with one click, and store them locally fo
 </div>
     </div>
 </div>
-<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
+<div class="project from-left bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
     <div class="project-image ">
         <img src="./images/freshcart.png" alt="image for freshcart project" class="w-full mb-3 object-cover h-60 ">
     </div>
@@ -196,7 +198,7 @@ Users can shorten long URLs, copy them with one click, and store them locally fo
 </div>
     </div>
 </div>
-<div class="project bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
+<div class="project from-left bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col ">
     <div class="project-image ">
         <img src="./images/yummy.png" alt="image for yummy project" class="w-full mb-3 object-cover h-60 ">
     </div>
@@ -286,11 +288,11 @@ Users can shorten long URLs, copy them with one click, and store them locally fo
     <div class="container w-10/12 mx-auto">
         <h2 class="text-4xl font-bold mb-10">Contact Me</h2>
 <div class="grid grid-cols-2 items-center">
-<div class="content">
+<div class="content animate-slide-in-left from-left">
     <h3 class="text-6xl font-semibold mb-6 ">Let’s work together</h3>
     <p class="text-gray-700/70 text-xl max-w-[400px]">Have a project in mind or want to say hi? I’m open to freelance and full-time roles.</p>
 </div>
-<div class="form">
+<div class="form from-right">
  <form class="bg-white shadow-lg rounded-lg p-8 space-y-6"  
   action="https://formspree.io/f/manpodol"
   method="POST">
@@ -313,7 +315,7 @@ Users can shorten long URLs, copy them with one click, and store them locally fo
       </div>
 
       <!-- Button -->
-      <button type="submit"
+      <button type="submit "
         class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
         Send Message
       </button>
@@ -323,8 +325,8 @@ Users can shorten long URLs, copy them with one click, and store them locally fo
 </section>
 <footer class="py-12">
     <div class="container mx-auto w-10/12 flex justify-between items-center">
-        <p class="text-gray-700/70 font-medium text-xl">© 2025 <span class="text-violet-600">Eslam Mohamed</span>. All rights reserved.</p>
-        <div class="media flex items-center gap-4"  >
+        <p class="text-gray-700/70 font-medium text-xl from-left">© 2025 <span class="text-violet-600">Eslam Mohamed</span>. All rights reserved.</p>
+        <div class="media flex items-center gap-4 from-right">
             <a href="mailto:eslama202002@gmail.com">
                 <img src="./images/email.png" alt="email.png" class="h-14 w-10">
             </a>
@@ -337,5 +339,8 @@ Users can shorten long URLs, copy them with one click, and store them locally fo
         </div>
     </div>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="js/main.js"></script>
 </body>
 </html>

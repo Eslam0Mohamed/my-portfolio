@@ -4,44 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eslam's portfolio </title>
+
+    <link rel="stylesheet" href="src/all.min.css">
     <link rel="stylesheet" href="src/output.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
-<body class="bg-white">
-<header class="py-6 bg-gray-200/50">
-    <div class="container w-10/12 mx-auto flex items-center justify-between px-4">
-        <h1 class="text-3xl font-bold text-black ">Eslam Mohamed</h1>
-        <ul class="flex gap-4 *:font-semibold *:text-lg *:text-gray-700/70 *:hover:border-b *:hover:border-amber-400">
-            <li>
-                <a href="#about">About Me</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact Me</a>
-            </li>
-        </ul>
-        <div class="mode flex gap-5 ">
-            <button>dark Mode</button>
-  <button class="font-semibold text-violet-600 hover:bg-violet-800 transition-all duration-500 hover:text-white hover:scale-105 border border-gray-300 py-3 px-5 rounded-xl">
-    <a href="mailto:eslama202002@gmail.com">Contact Me</a>
-</button>
+<body class="bg-white relative">
+<header class="py-6 bg-gray-200/50 dark:bg-gray-900">
+    <div class="container w-10/12 mx-auto  flex items-center justify-between">
+        <h1 class="text-2xl lg:text-3xl font-bold text-black dark:text-gray-100">Eslam Mohamed</h1>
+        
+        <div class="flex items-center gap-10">
+            <ul class="hidden md:flex gap-4 *:font-semibold *:text-lg *:text-gray-700/70 *:hover:border-b *:hover:border-gray-400 *:dark:text-gray-300">
+                <li>
+                    <a href="#about">About Me</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+            <button class="hidden md:block mode">
+                <!-- <img src="./images/night.png" class="size-8 cursor-pointer dark:bg-gray-300"/> -->
+                 <i class="fa-solid fa-moon text-4xl text-gray-800 dark:text-white"></i>
+            </button>
+            <button class="block md:hidden menu-bar cursor-pointer">
+            <i class="fa-solid fa-bars text-4xl text-gray-800 dark:text-white"></i>
+            </button>
         </div>
     </div>
+
+
 </header>
-<section class="about py-12" id="about"> 
-    <div class="container w-10/12 mx-auto lg:flex justify-between items-center px-3 ">
-        <div class="home-contant w-2/3 space-y-8 from-left" >
-            <h1 class="text-7xl capitalize font-bold ">eslam mohamed</h1>
-            <h1 class="text-5xl capitalize font-semibold text-violet-600 text-shadow-2xs">frontend engineer</h1>
-            <p class="text-2xl text-gray-700/70">I build sleek, fast, and accessible web experiences. 
+<div class="mobile-menu dark:bg-gray-900 bg-gray-200 absolute left-0 w-full z-30 -translate-x-full transition-transform duration-700">
+  <div class="container w-10/12 mx-auto dark:bg-gray-900">
+       <div class="flex flex-col gap-10  py-4">
+            <ul class="flex flex-col gap-4 *:font-semibold *:text-lg *:text-gray-700/70 *:hover:border-b *:hover:border-gray-400 *:dark:text-gray-300">
+                <li>
+                    <a href="#about">About Me</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+            <button class="mode w-fit">
+                 <i class="fa-solid fa-moon text-4xl text-gray-800 dark:text-white"></i>
+            </button>
+        </div>
+  </div>
+</div>
+
+
+<section id="about" class="about py-12 dark:bg-gray-800" id="about"> 
+    <div class="container w-10/12 mx-auto space-y-6 sm:flex sm:flex-col sm:justify-center sm:items-center lg:flex lg:flex-row lg:justify-between lg:items-center px-3 ">
+        <div class="home-contant w-full sm:w-full lg:w-2/3 xs:space-y-4 lg:space-y-8 from-left" >
+            <h1 class="w-full  text-4xl sm:text-5xl lg:text-6xl capitalize font-bold ">eslam mohamed</h1>
+            <h1 class="w-full text-3xl sm:text-4xl lg:text-5xl capitalize font-semibold text-violet-600 text-shadow-2xs">frontend engineer</h1>
+            <p class="text-2xl text-gray-700/70 dark:text-gray-300">I build sleek, fast, and accessible web experiences. 
                 Focused on DX and pixel-perfect UI with React, TypeScript, and modern tooling.</p>
-            <div class="btns flex gap-5">
+            <div class="btns flex gap-5 xs:flex-col sm:flex-row">
                 <button class="font-semibold hover:bg-violet-800 text-white transition-all duration-500 hover:scale-105 bg-violet-600 py-3 px-5 rounded-xl">
                     <a href="projects">View Projects</a>
                 </button>
@@ -50,16 +83,16 @@
                 </button>
             </div>
         </div>
-        <div class="home-image from-right">
+        <div class="home-image from-right ">
             <img src="./images/ae1.jpg" alt="image portfolio for me" class="w-96 rounded-2xl">
         </div>
     </div>
 </section>
-<section class="projects py-12 bg-gray-200">
+<section id="projects" class="projects py-12 bg-gray-200 dark:bg-gray-900">
     <div class="container w-11/12 mx-auto " >
-    <h2 class="text-4xl font-bold mb-10">My Projects</h2>
+    <h2 class="text-4xl font-bold mb-10 dark:text-white">My Projects</h2>
 
-    <div class="projects-container grid grid-cols-3 gap-5">
+    <div class="projects-container grid lg:grid-cols-3 md:grid-cols-2 gap-5">
 <div class="project from-left bg-white rounded-2xl overflow-hidden min-h-[500px] flex flex-col">
     <div class="project-image ">
         <img src="./images/weather.png" alt="image for weather project" class="w-full mb-3 object-cover h-60 ">
@@ -223,10 +256,10 @@ Users can shorten long URLs, copy them with one click, and store them locally fo
 
 </div>
 </section>
-<section id="skills" class="skills py-12 bg-white">
+<section id="skills" class="skills py-12 bg-white dark:bg-gray-800">
 <div class="container w-10/12 mx-auto ">
-        <h2 class="text-4xl font-bold mb-10">My Skills</h2>
-    <div class="grid grid-cols-5 gap-4">
+        <h2 class="text-4xl font-bold mb-10 dark:text-white">My Skills</h2>
+    <div class="grid  lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-4">
 <div class="skill py-2 px-3 bg-gray-300 flex items-center justify-center flex-col gap-3 rounded-2xl text-gray-950 hover:text-white  transition-colors duration-300 hover:bg-violet-600">
     <h3 class="font-semibold text-2xl ">Html</h3>
 </div>
@@ -284,13 +317,13 @@ Users can shorten long URLs, copy them with one click, and store them locally fo
 </div>
 </div>
 </section>
-<section id="contact" class="contact py-12 bg-gray-200">
+<section id="contact" class="contact py-12 bg-gray-200 dark:bg-gray-900">
     <div class="container w-10/12 mx-auto">
-        <h2 class="text-4xl font-bold mb-10">Contact Me</h2>
-<div class="grid grid-cols-2 items-center">
+        <h2 class="text-4xl font-bold mb-10 dark:text-white">Contact Me</h2>
+<div class="grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
 <div class="content animate-slide-in-left from-left">
-    <h3 class="text-6xl font-semibold mb-6 ">Let’s work together</h3>
-    <p class="text-gray-700/70 text-xl max-w-[400px]">Have a project in mind or want to say hi? I’m open to freelance and full-time roles.</p>
+    <h3 class="text-6xl font-semibold mb-6 dark:text-white">Let’s work together</h3>
+    <p class="text-gray-700/70 text-xl max-w-[400px] dark:text-gray-300">Have a project in mind or want to say hi? I’m open to freelance and full-time roles.</p>
 </div>
 <div class="form from-right">
  <form class="bg-white shadow-lg rounded-lg p-8 space-y-6"  
@@ -323,9 +356,9 @@ Users can shorten long URLs, copy them with one click, and store them locally fo
 </div>
     </div>
 </section>
-<footer class="py-12">
-    <div class="container mx-auto w-10/12 flex justify-between items-center">
-        <p class="text-gray-700/70 font-medium text-xl from-left">© 2025 <span class="text-violet-600">Eslam Mohamed</span>. All rights reserved.</p>
+<footer class="py-12 dark:bg-gray-800">
+    <div class="container mx-auto w-10/12 flex md:flex-row justify-between gap-3 items-center flex-col">
+        <p class="text-gray-700/70 dark:text-gray-300 font-medium text-xl from-left">© 2025 <span class="text-violet-600">Eslam Mohamed</span>. All rights reserved.</p>
         <div class="media flex items-center gap-4 from-right">
             <a href="mailto:eslama202002@gmail.com">
                 <img src="./images/email.png" alt="email.png" class="h-14 w-10">

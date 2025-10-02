@@ -1,5 +1,11 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --breakpoint-xs: 320px;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+}
 
 @keyframes slide-in-right {
   0% {
@@ -31,3 +37,4 @@
 .animate-slide-in-left {
   animation: slide-in-left 1s ease-out forwards;
 }
+
